@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "2841ed78-3082-49cd-98bb-1312758faf9e",
+		"name": "socket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14889061"
+	},
+	"item": [
+		{
+			"name": "get all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "gggg@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userName",
+							"value": "hung",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://localhost:1234/api/users"
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "gggg9@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "userName",
+							"value": "hung5",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "35",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:1234/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:1234/api/user/6997c7ce-49a5-47ba-8949-4c549038301e"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:1234/api/user/90227db1-4502-4b17-a20c-3670503bb11e"
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "gggg5@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "userName",
+							"value": "hihihihi",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:1234/api/user/6997c7ce-49a5-47ba-8949-4c549038301e"
+			},
+			"response": []
+		}
+	]
+}
